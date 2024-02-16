@@ -14,7 +14,7 @@ let resultDisplay  = document.querySelector('.result__dynamic') as HTMLElement;
 
 inputValues.forEach((value) => {
     value.addEventListener("click", (e) => {
-        let id:string = e.target?.id ?? "Invalid";
+        let id:string = (e.target as HTMLElement)?.id ?? "Invalid";
         if (id) {
             const selectedValue:string =  id
             selectedRating = selectedValue     
