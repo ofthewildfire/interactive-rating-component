@@ -33,7 +33,7 @@ inputValues.forEach((value) => {
 
         // Set styles for newly selected label
         if (labelElement) {
-            labelElement.style.backgroundColor = "#3e13fb";
+            labelElement.style.backgroundColor = "hsl(216, 12%, 54%)";
             labelElement.style.color = "hsl(0, 0%, 100%)";
         }
 
