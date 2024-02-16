@@ -28,10 +28,10 @@ body {
     display: grid;
     gap: .9375rem;
     width: 70%;
-    max-width: 24rem;
+    max-width: 21.875rem;
     background-color: var(--DarkBlue);
     padding: 1.5em;
-    border-radius: 15px;
+    border-radius: 20px;
   }
 
   .hidden {
@@ -66,8 +66,8 @@ body {
     color: var(--LightGrey);
     padding: 0.5em;
     border-radius: 50%;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.75rem;
+    width: 1.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +75,7 @@ body {
   }
 
   .rating-card__form-btn, .thankyou-card__return-btn {
+  cursor: pointer;
   border: none;
   border-radius: 50px;
   background: var(--Orange);
@@ -111,7 +112,8 @@ body {
 
   /* hover states */
 
-  .rating-card__form-btn:is(:hover, :focus, :active) {
+  .rating-card__form-btn:is(:hover, :focus, :active), 
+  .thankyou-card__return-btn:is(:hover, :focus, :active) {
     background-color: var(--White);
     color: var(--Orange);
     cursor: pointer;
