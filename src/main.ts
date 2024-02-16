@@ -14,10 +14,38 @@ let resultDisplay  = document.querySelector('.result__dynamic') as HTMLElement;
 
 inputValues.forEach((value) => {
     value.addEventListener("click", (e) => {
-        let id:string = (e.target as HTMLElement)?.id ?? "Invalid";
+        // let id:string = (e.target as HTMLElement)?.id ?? "Invalid";
+        let id:string = (e.target as HTMLElement)?.id;
+
+
+
+        // Experiment #1
+        let labelElement:HTMLLabelElement | null = document.querySelector(`label[for=${id}]`);
+
+       // Reset styles of previously selected label
+        if (selectedRating) {
+            let previousLabel = document.querySelector(`label[for=${selectedRating}]`) as HTMLElement;
+            if (previousLabel) {
+                previousLabel.style.backgroundColor = "hsl(217, 12%, 63%, .2)";
+                previousLabel.style.color = "hsl(217, 12%, 63%)";
+            }
+        }
+
+        // Set styles for newly selected label
+        if (labelElement) {
+            labelElement.style.backgroundColor = "hsl(25, 97%, 53%)";
+            labelElement.style.color = "hsl(0, 0%, 100%)";
+        }
+
+        // I dont know what I am doing END!
+
         if (id) {
-            const selectedValue:string =  id
-            selectedRating = selectedValue     
+            const selectedValue:string =  id;
+            selectedRating = selectedValue;   
+            // let color = document.querySelector(`label[for=${selectedRating}]`);
+            // (color as HTMLElement).style.backgroundColor = "hsl(25, 97%, 53%)";
+            // (color as HTMLElement).style.color = "white";
+            // console.log(color)
         }
     })       
 })
@@ -60,7 +88,9 @@ btnSubmit?.addEventListener("click", () => {
 btnReturn?.addEventListener("click", resetCard)
 
 function resetCard() {
-    selectedRating = ""
+    (document.querySelector(`label[for=${selectedRating}]`) as HTMLElement).style.backgroundColor = "hsl(217, 12%, 63%, .2)";
+    (document.querySelector(`label[for=${selectedRating}]`) as HTMLElement).style.color = "hsl(217, 12%, 63%)";
+    selectedRating = "";
     thankYouCard?.classList.toggle("hidden")
     mainCard?.classList.toggle("hidden")
 }
