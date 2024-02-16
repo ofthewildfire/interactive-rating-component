@@ -5,7 +5,13 @@ Live link: [https://interactive-rating-component-nine-tau.vercel.app/](https://i
 ![](./Screenshot%202024-02-16%20at%2021-57-33%20Vite%20TS.png)
 ![](./Screenshot%202024-02-16%20at%2021-57-44%20Vite%20TS.png)
 
-This is a simple rating component challenge from @FrontendMentor. I have used HTML CSS and JavaScript with Typescript, I am currently learning TS so using it is important, it was a massive challenge, I encountered a lot of errors but pushed through and its worked // save one error.
+This is a simple rating component challenge from @FrontendMentor. I have used: 
+
+- HTML 
+- CSS and 
+- JavaScript with Typescript 
+
+I am currently learning TS so using it is important, it was a massive challenge, I encountered a lot of errors but pushed through and its worked // save one error.
 
 ## Continued Development
 
