@@ -7,21 +7,20 @@ const inputValues = Array.from(document.querySelectorAll('.form__input-label')) 
 const btnSubmit = document.querySelector('.rating-card__form-btn');
 const btnReturn = document.querySelector(".thankyou-card__return-btn")
 let selectedRating:string;
-let resultDisplay:HTMLElement | null = document.querySelector('.result__dynamic')
+let resultDisplay:HTMLElement  = document.querySelector('.result__dynamic');
 
 
 // When a rating is selected.
 
 inputValues.forEach((value) => {
     value.addEventListener("click", (e) => {
-        if (e.target.id) {
-            const selectedValue:string =  e.target.id
+        let value:string | "0" = e.target.id
+        if (value) {
+            const selectedValue:string =  value
             selectedRating = selectedValue     
         }
- 
         
     })       
-
 })
 
 // When the button is clicked
