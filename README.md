@@ -3,7 +3,6 @@
 Live link: [https://interactive-rating-component-nine-tau.vercel.app/](https://interactive-rating-component-nine-tau.vercel.app/)
 
 ![](./Screenshot%202024-02-16%20at%2021-57-33%20Vite%20TS.png)
-![](./Screenshot%202024-02-16%20at%2021-57-44%20Vite%20TS.png)
 
 This is a simple rating component challenge from @FrontendMentor. I have used: 
 
