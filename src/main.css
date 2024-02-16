@@ -97,3 +97,8 @@ body {
     max-width: fit-content;
     margin: 0 auto;
   }
+
+  .selected {
+    background-color: var(--Orange);
+    color: var(--White);
+  }

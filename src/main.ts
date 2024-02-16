@@ -9,15 +9,19 @@ const btnReturn = document.querySelector(".thankyou-card__return-btn")
 let selectedRating:string;
 let resultDisplay:HTMLElement | null = document.querySelector('.result__dynamic')
 
+
 // When a rating is selected.
 
 inputValues.forEach((value) => {
     value.addEventListener("click", (e) => {
         if (e.target.id) {
             const selectedValue:string =  e.target.id
-           selectedRating = selectedValue 
+            selectedRating = selectedValue     
         }
-    })
+ 
+        
+    })       
+
 })
 
 // When the button is clicked
@@ -53,8 +57,6 @@ btnSubmit?.addEventListener("click", () => {
     else  {
         console.log("You have to select a rating!")
     }
-
-   
 })
 
 btnReturn?.addEventListener("click", resetCard)
@@ -64,3 +66,4 @@ function resetCard() {
     thankYouCard?.classList.toggle("hidden")
     mainCard?.classList.toggle("hidden")
 }
+
