@@ -8,6 +8,7 @@ const btnSubmit = document.querySelector('.rating-card__form-btn');
 const btnReturn = document.querySelector(".thankyou-card__return-btn")
 let selectedRating:string;
 let resultDisplay  = document.querySelector('.result__dynamic') as HTMLElement;
+let error = document.querySelector(".error") as HTMLSpanElement;
 
 
 // When a rating is selected.
@@ -41,12 +42,8 @@ inputValues.forEach((value) => {
 
         if (id) {
             const selectedValue:string =  id;
-            selectedRating = selectedValue;   
-            // let color = document.querySelector(`label[for=${selectedRating}]`);
-            // (color as HTMLElement).style.backgroundColor = "hsl(25, 97%, 53%)";
-            // (color as HTMLElement).style.color = "white";
-            // console.log(color)
-        }
+            selectedRating = selectedValue;    
+        } 
     })       
 })
 
@@ -56,8 +53,9 @@ btnSubmit?.addEventListener("click", () => {
 
 
     if (selectedRating) {
+        error.innerText = "";
          thankYouCard?.classList.toggle("hidden")
-    mainCard?.classList.toggle("hidden")
+        mainCard?.classList.toggle("hidden")
     
     switch(selectedRating) {
         case "rating-1": 
@@ -81,13 +79,14 @@ btnSubmit?.addEventListener("click", () => {
     }
 
     else  {
-        console.log("You have to select a rating!")
+        error.innerText = "Please select a rating!"
     }
 })
 
 btnReturn?.addEventListener("click", resetCard)
 
 function resetCard() {
+    error.innerText = "";
     (document.querySelector(`label[for=${selectedRating}]`) as HTMLElement).style.backgroundColor = "hsl(217, 12%, 63%, .2)";
     (document.querySelector(`label[for=${selectedRating}]`) as HTMLElement).style.color = "hsl(217, 12%, 63%)";
     selectedRating = "";
