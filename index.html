@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <main class="rating-card">
+      <div class="rating-card__logo-box">
+        <svg class="rating-card__logo" width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+      </div>
+      <h1 class="rating-card__title">How did we do?</h1>
+      <p class="rating-card__para">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <!-- Selection form -->
+      <form action="" class="rating-card__form">
+        <label for="rating-1" class="form__input-label"> 1
+          <input type="radio" name="rating" id="rating-1" class="form__input-radio">
+        </label>
+        <label for="rating-2" class="form__input-label"> 2
+          <input type="radio" name="rating" id="rating-2" class="form__input-radio">
+        </label>
+        <label for="rating-3" class="form__input-label"> 3
+          <input type="radio" name="rating" id="rating-3" class="form__input-radio">
+        </label>
+        <label for="rating-4" class="form__input-label"> 4
+          <input type="radio" name="rating" id="rating-4" class="form__input-radio">
+        </label>
+        <label for="rating-5" class="form__input-label"> 5
+          <input type="radio" name="rating" id="rating-5" class="form__input-radio">
+        </label>
+      </form>
+      <button type="submit" class="rating-card__form-btn" >Submit</button>
+      <!-- Selection form end -->
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
