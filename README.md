@@ -12,6 +12,20 @@ This is a simple rating component challenge from @FrontendMentor. I have used:
 
 I am currently learning TS so using it is important, it was a massive challenge, I encountered a lot of errors but pushed through and its worked // save one error.
 
+## Issue to-do 
+
+Currently after you select a rating and then return to the cleared card the hover to purple on clicked ratings doesn't work. 
+
+```js
+        // Set styles for newly selected label
+        if (labelElement) {
+            labelElement.style.backgroundColor = "hsl(216, 12%, 54%)";
+            labelElement.style.color = "hsl(0, 0%, 100%)";
+        }
+```
+
+I suspect an interaction with CSS + JS resetting it all. Will look into it. 
+
 ## Continued Development
 
 - I currently have an error in the console.log related to an invalid DOM selection in regards to changing the colour of the label with the nested radio button, I will continue research and fix this error!
