@@ -19,7 +19,6 @@ inputValues.forEach((value) => {
             const selectedValue:string =  id
             selectedRating = selectedValue     
         }
-        
     })       
 })
 
