@@ -19,3 +19,6 @@ I am currently learning TS so using it is important, it was a massive challenge,
 - Tailwind was something I wanted to use for this challenge, but its been a minute and I Was having an issue setting it up, so, I went with vanilla CSS and I will return to refactor this code. 
 
 - Improve/refactor usage of TS. I did not utilize TS to its full capacity, I was learning with this project alongside the official docs, so, errors and very little optimization, so, optimization and cleaner TS code! Follow best practice, etc. 
+
+- Better invalid submission que -- currently it just logs to the console if someone clicks on the submit button without a rating present, I would like to add a small message "You need to pick a rating before submission"!
+
